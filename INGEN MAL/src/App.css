@@ -1,7 +1,34 @@
 
+.navbar {
+  width: 100%;
+  padding: 1.5rem 3rem;
 
-header {
-    color: rgb(176, 176, 176);
-    padding: 20px;
-    text-align: center;
+  background: #E9E3D7;
+
+  position: fixed;
+  top: 0;
+  left: -10%;
+
+  z-index: 1000;
+
+  transform: rotate(-3deg);
+  transform-origin: top left;
+  width: 1600.284px;
+  height: 150.87px;
+}
+
+.navbar-content {
+  transform: rotate(3deg);
+}
+
+.hero-section {
+  width: 100%;
+  height: 838px;
+
+  background: linear-gradient(
+    62deg,
+    rgba(4, 0, 255, 0.65) 10.91%,
+    rgba(4, 0, 255, 0) 60.69%
+  ),
+  #9B99FF;
 }

@@ -1,11 +1,9 @@
+import "../App.css";
 
-
-function Header() {
-    return (
-        <header>
-            <h1>Ingen Mal</h1>
-        </header>
-    );
+export default function Header() {
+  return (
+    <header className="navbar">
+      <div className="navbar-content"></div>
+    </header>
+  );
 }
-
-export default Header;
