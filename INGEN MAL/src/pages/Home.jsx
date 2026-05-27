@@ -1,5 +1,8 @@
-import { react } from "react";
-import Header from "../components/header";
+import React from "react";
+import Header from "../components/header";  
+import "../App.css";
+import InfoboxComponent from "../components/Infobox";
+import Title from "../components/title";
 
 function Home() {
     return (
@@ -7,19 +10,34 @@ function Home() {
             <Header />
 
         <main>
-            <div className="hero-section">
-                <div className="grid-overlay"/>
+                <div className="hero-section">
+                    <Title/>
+                    <div className="grid-overlay"/>
+                    
                 
-            
-            </div>
+                </div>
 
-            <div className="section-a">
-            
-            </div>
+                <div className="section-a">
+                    <InfoboxComponent />
+                
+                </div>
 
-            <div className="section-b">
-            
-            </div>
+                <div className="section-b">
+                
+                </div>
+
+                <div className="some-section">
+                
+                </div>
+
+                <div className="mockup-section">
+                
+                </div>
+
+                <div className="medie-section">
+                
+                </div>
+
         </main>
         </div>
     );
