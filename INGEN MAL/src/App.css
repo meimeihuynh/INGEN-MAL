@@ -14,6 +14,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  
 }
 
 .title-box {
@@ -85,6 +86,26 @@ body {
   overflow: hidden;
 }
 
+.navbar-store {
+  width: 100%;
+  padding: 1.5rem 3rem;
+
+  background: #000000;
+
+  position:   fixed;
+  top: 0;
+  left: -10%;
+
+  z-index: 1000;
+
+  transform: rotate(-3deg);
+  transform-origin: top left;
+  width: 1600.284px;
+  height: 150.87px;
+
+  overflow: hidden;
+}
+
 .navbar-content {
   transform: rotate(3deg);
 }
@@ -104,14 +125,57 @@ body {
   #9B99FF;
 }
 
-.logo-header {
+.navbar-icons {
+  position: absolute;
+
+  right: 3rem;
+  top: 50%;
+
+  margin-top: 40px;
+  margin-right: 130px;
+
+  transform: translateY(-50%) rotate(3deg);
+
+  display: flex;
+  gap: 2rem;
+}
+
+.storenavbar-icons {
+  position: absolute;
+
+  right: 3rem;
+  top: 50%;
+
+  margin-top: 40px;
+  margin-right: 130px;
+
+  transform: translateY(-50%) rotate(3deg);
+
+  display: flex;
+  gap: 2rem;
+}
+
+
+.shop-icon, .search-icon, .menu-icon {
+  width: 25px;
+  height: auto;
+}
+
+.storeshop-icon, .storesearch-icon, .storemenu-icon {
+  width: 25px;
+  height: auto;
+  filter: invert(100%) sepia(100%) grayscale(100%) brightness(200%);
+}
+
+
+.logo-header, .logostore-header {
   width: 376px;
   height: auto;
 
   transform: rotate(3deg);
 
   position: absolute;
-  margin-left: 110px;
+  margin-left: 130px;
 
 }
 
@@ -128,6 +192,41 @@ body {
   pointer-events: none;
 }
 
+.grid-overlaydark {
+  position: absolute;
+  inset: 60px;
+
+  background-image: 
+   linear-gradient(rgba(0, 0, 0, 0.033) 3px, transparent 3px),
+   linear-gradient(90deg, rgba(0, 0, 0, 0.036) 3px, transparent 3px);
+
+  background-size: 60px 60px;
+
+  pointer-events: none;
+  
+}
+
+.grid-overlaymockup {
+  position: absolute;
+  inset: 0px;
+  transform: rotate(45deg);
+
+  
+  width: 150%;
+  height: 150%;
+
+  top: -25%;
+  left: -25%;
+
+  background-image: 
+   linear-gradient(rgba(0, 0, 0, 0.033) 3px, transparent 3px),
+   linear-gradient(90deg, rgba(0, 0, 0, 0.036) 3px, transparent 3px);
+
+  background-size: 60px 60px;
+
+  pointer-events: none;
+  
+}
 
 .section-a {
   position: relative;;
@@ -167,26 +266,59 @@ body {
   position: relative;
 
   width: 100%;
-  height: 100vh;
+  height: 200vh;
 
   background: white;
 
   z-index: 2;
 }
 
+.some-section {
+  position: relative;
+
+  width: 100%;
+  height: 100vh;
+
+  background: #000000;
+}
+
+.mockup-section {
+  position: relative;
+
+  width: 100%;
+  height: 100vh;
+
+  background: #F4D6CC;
+}
+
+.medie-section {
+  position: relative;
+
+  width: 100%;
+  height: 100vh;
+
+  background: #0C5DA4;
+}
+
+
 
 /* Infobox styles */
 
 .info-wrapper {
-  display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 40px;
   justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 318px);
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 666px;  
+
 }
 
 .infobox-card {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
 
   background: white;
 
@@ -218,4 +350,70 @@ body {
   font-size: 1.5rem;
   font-family: "arial", sans-serif;
   
+}
+
+/* Footer.css */
+
+.footer {
+  width: 100%;
+
+  background: #000;
+
+  color: white;
+
+  padding: 4rem;
+}
+
+.footer-row {
+  display: grid;
+
+  grid-template-columns:
+    auto
+    1fr
+    auto
+    1fr
+    auto;
+
+  align-items: center;
+}
+
+.footer-contact,
+.footer-language {
+  font-size: 1rem;
+
+  text-transform: uppercase;
+  font-family: "arial", sans-serif;
+
+  gap: 0.5rem;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1rem;
+}
+
+.footer-logo img {
+  width: 300px;
+  height: auto;
+}
+
+.product-item {
+  width: 350px;
+  height: 500px;
+
+  background: url("./assets/Productbox.png") no-repeat center center;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  padding: 2rem;
 }

@@ -3,8 +3,12 @@ import Header from "../components/header";
 import "../App.css";
 import InfoboxComponent from "../components/Infobox";
 import Title from "../components/title";
+import Footer from "../components/footer";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+    const navigate = useNavigate();
+
     return (
         <div>
             <Header />
@@ -23,6 +27,7 @@ function Home() {
                 </div>
 
                 <div className="section-b">
+                    <div className="grid-overlaydark"/>
                 
                 </div>
 
@@ -31,6 +36,7 @@ function Home() {
                 </div>
 
                 <div className="mockup-section">
+                    <div className="grid-overlaymockup"/>
                 
                 </div>
 
@@ -39,6 +45,7 @@ function Home() {
                 </div>
 
         </main>
+        <Footer />
         </div>
     );
 }
